@@ -1,27 +1,23 @@
-"use strict";
-
 const launchSlider = (sliderSelector) => {
     const sliders = document.querySelectorAll(sliderSelector);
     if (!sliders.length) return;
 
     let currentIndex = 0;
-    sliders[currentIndex].classList.add('active');
 
-    function showSlide(index) {
-        if (!sliders[currentIndex] || !sliders[index]) return;
-
-        sliders[currentIndex].classList.remove('active');
-        sliders[index].classList.add('active');
-        currentIndex = index;
-    }
+    const activateSlider = (index) => {
+        sliders.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+    };
 
     function startSlider() {
         setInterval(() => {
-            const nextIndex = (currentIndex + 1) % sliders.length;
-            showSlide(nextIndex);
+            currentIndex = (currentIndex + 1) % sliders.length;
+            activateSlider(currentIndex);
         }, 3000);
     }
 
+    activateSlider(currentIndex);
     startSlider();
 }
 
