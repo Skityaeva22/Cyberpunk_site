@@ -41,6 +41,12 @@ h3 {
     position: relative;
 }
 
+.black_container {
+    width: 100%;
+    background-color: black;
+    height: 814px;
+}
+
 header {
     position: relative;
     z-index: 10;
@@ -232,4 +238,14 @@ header {
 .slider_2_2.active,
 .slider_2_3.active {
     opacity: 1;
+}
+
+.part_3 {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.part_3 img {
+    width: 100%;
 }
