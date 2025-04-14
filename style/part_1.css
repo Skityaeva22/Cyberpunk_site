@@ -75,3 +75,55 @@
     font-size: 24px;
     line-height: 40px;
 }
+
+@media (width <= 320px) {
+    .part_1 {
+        height: 763px;
+    }
+
+    .part_1 .container {
+        width: 100%;
+    }
+
+    .header_logo {
+        height: 50px;
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    .header_social img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .header_social {
+        width: 296px;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .slider_1 {
+        height: 763px;
+    }
+
+    .info_box {
+        top: 556px;
+        padding: 30px 38px 30px 38px;
+        width: 320px;
+        height: 207px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-image: url("../images/rectangle_2.png");
+    }
+
+    .info_box h2 {
+        width: 100%;
+    }
+
+    .info_box button {
+        height: 60px;
+        width: 244px;
+        font-size: 20px;
+    }
+}

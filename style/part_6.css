@@ -13,3 +13,28 @@
     font-weight: 400;
     color: var(--color-black);
 }
+
+@media (width <= 320px) {
+    .footer_logo {
+        flex-direction: column;
+        gap: 25px;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .footer_links {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .footer_logo .picture_1 {
+        height: 50px;
+        width: 200px;
+    }
+
+    .footer_logo .picture_2 {
+        height: 50px;
+        width: 116.25px;
+    }
+}

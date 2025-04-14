@@ -7,6 +7,7 @@
 .part_5 .left_side {
     width: 50%;
     height: 717px;
+    object-fit: cover;
 }
 
 .part_5 .right_side {
@@ -48,5 +49,41 @@
 
     .part_5 .right_side {
         width: 100%;
+    }
+}
+
+@media (width <= 320px) {
+    .part_5 {
+        flex-direction: column;
+    }
+
+    .part_5 .left_side {
+        width: 100%;
+        height: 198px;
+    }
+
+    .part_5 .right_side {
+        width: 100%;
+    }
+
+    .part_5 .right_side h2 {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .part_5 .right_side .block {
+        margin-bottom: 40px;
+    }
+
+    .part_5 .right_side {
+        padding-top: 40px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .part_5 .right_side .platforms {
+        height: 126.27px;
+        width: 100%;
+        object-fit: cover;
     }
 }

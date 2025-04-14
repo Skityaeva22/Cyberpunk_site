@@ -1,6 +1,7 @@
 .part_3_img {
     width: 100%;
     height: 70px;
+    object-fit: cover;
 }
 
 .part_3 {
@@ -42,6 +43,7 @@
 .message_form input[type="email"] {
     width: 100%;
     font-size: 18px;
+    line-height: 100%;
     padding-bottom: 10px;
     background-color: var(--color-black);
     border: none;
@@ -131,6 +133,10 @@
     display: none;
 }
 
+.play_game {
+    display: none;
+}
+
 @media (320px < width <= 1024px) {
     .part_3 .vertical_picture {
         display: block;
@@ -164,5 +170,63 @@
         flex-direction: column;
         align-items: start;
         gap: 15px;
+    }
+
+    .file_extension {
+        display: none;
+    }
+}
+
+@media (width <= 320px) {
+    .part_3 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .part_3 .vertical_picture,
+    .part_3 .horizontal_picture,
+    .file_extension {
+        display: none;
+    }
+
+    .part_3 .container .item {
+        gap: 0;
+    }
+
+    .part_3_description {
+        margin-bottom: 70px;
+        width: 296px;
+    }
+
+    .message_form input[type="text"],
+    .message_form input[type="email"],
+    .upload_text {
+        font-size: 16px;
+    }
+
+    .sale_2 {
+        display: none;
+    }
+
+    .play_game {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .sale_1 {
+        height: 62px;
+        width: 62px;
+        position: absolute;
+        top: -48px;
+    }
+
+    .play_game .item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .consent {
+        font-size: 12px;
     }
 }
