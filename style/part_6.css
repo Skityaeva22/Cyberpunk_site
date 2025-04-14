@@ -1,0 +1,15 @@
+.footer_logo {
+    display: flex;
+    gap: 32px;
+    height: 74px;
+}
+
+.footer_links {
+    display: flex;
+    gap: 32px;
+}
+
+.footer_links a {
+    font-weight: 400;
+    color: var(--color-black);
+}

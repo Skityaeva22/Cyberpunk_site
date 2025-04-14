@@ -1,0 +1,10 @@
+.part_7 {
+    background-color: var(--color-black);
+    height: 40px;
+    color: var(--color-white);
+    font-family: var(--font-text);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
