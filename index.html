@@ -33,7 +33,7 @@
         <div class="container">
             <div class="info_box">
                 <h2>Доступно на всех платформах</h2>
-                <button>Узнать больше</button>
+                <button id="moreInfoBtn">Узнать больше</button>
             </div>
         </div>
     </div>
@@ -185,13 +185,20 @@
 
                 <div class="footer_links">
                     <a href=".">Лицензия</a>
-                    <a href=".">Политика конфиденциальности</a>
+                    <button id="privacyPolicyBtn">Политика конфиденциальности</button>
                 </div>
             </footer>
         </div>    
     </div>
     
     <p class="part_7">CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®</p>
+
+    <div id="modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <div id="modalText">Текст по умолчанию</div>
+        </div>
+    </div>
 </body>
 <script src="index.js"></script>
 </html>

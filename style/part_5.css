@@ -76,9 +76,7 @@
     }
 
     .part_5 .right_side {
-        padding-top: 40px;
-        padding-left: 12px;
-        padding-right: 12px;
+        padding: 40px 12px 30px 12px;
     }
 
     .part_5 .right_side .platforms {

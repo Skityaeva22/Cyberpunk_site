@@ -5,6 +5,7 @@
 @import "./style/part_5.css";
 @import "./style/part_6.css";
 @import "./style/part_7.css";
+@import "./style/modal.css";
 
 @font-face {
     font-family: 'Archangelsk';
@@ -73,6 +74,7 @@ button {
     line-height: 100%;
     font-weight: 700;
     cursor: pointer;
+    font-family: var(--font-text);
 }
 
 .container {
