@@ -28,3 +28,7 @@
     justify-self: end;
     margin-top: -11px;
 }
+
+#modalText {
+    text-align: center;
+}
